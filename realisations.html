@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez les réalisations de DLGS_BAT - Entreprise de BTP en Île-de-France spécialisée en maçonnerie, peinture, enduit, travaux intérieurs et extérieurs">
+    <title>Nos Réalisations | DLGS_BAT</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/img/logo_defou.png" alt="" width="100" height="auto">
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="realisations.html" class="active">Réalisations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Bannière de page -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Nos Réalisations</h1>
+            <p>Découvrez notre savoir-faire à travers nos projets</p>
+        </div>
+    </section>
+
+    <!-- Filtres de catégories -->
+    <section class="category-filter">
+        <div class="container">
+            <h2>Explorez par catégorie</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="maconnerie">Maçonnerie</button>
+                <button class="filter-btn" data-filter="peinture">Peinture</button>
+                <button class="filter-btn" data-filter="enduit">Enduit</button>
+                <button class="filter-btn" data-filter="interieur">Travaux intérieurs</button>
+                <button class="filter-btn" data-filter="exterieur">Travaux extérieurs</button>
+                <button class="filter-btn" data-filter="amenagement">Agencement</button>
+                <button class="filter-btn" data-filter="couverture">Couverture</button>
+                <button class="filter-btn" data-filter="sol">Revêtement de sol</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie de réalisations -->
+    <section class="realisations">
+        <div class="container">
+            <div class="realisations-grid">
+                <!-- Cuisine - Travaux intérieurs -->
+                <div class="realisation-card" data-category="interieur amenagement">
+                    <div class="before-after-container">
+                        <div class="before-after-images">
+                            <img src="assets/img/cuisine_avant.JPG" alt="Cuisine avant rénovation" class="before-img">
+                            <img src="assets/img/cuisine_apres.JPG" alt="Cuisine après rénovation" class="after-img">
+                            <div class="comparison-slider-handle"></div>
+                        </div>
+                        <div class="image-labels">
+                            <span class="before-label">Avant</span>
+                            <span class="after-label">Après</span>
+                        </div>
+                    </div>
+                    <div class="realisation-info">
+                        <h3>Rénovation complète de cuisine</h3>
+                        <p>Transformation totale d'une cuisine vieillissante en un espace moderne, fonctionnel et esthétique.</p>
+                        <div class="tags">
+                            <span class="tag">Travaux intérieurs</span>
+                            <span class="tag">Agencement</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Escalier - Travaux intérieurs -->
+                <div class="realisation-card" data-category="interieur">
+                    <div class="before-after-container">
+                        <div class="before-after-images">
+                            <img src="assets/img/escalier_avant.JPG" alt="Escalier avant rénovation" class="before-img">
+                            <img src="assets/img/escalier_apres.JPG" alt="Escalier après rénovation" class="after-img">
+                            <div class="comparison-slider-handle"></div>
+                        </div>
+                        <div class="image-labels">
+                            <span class="before-label">Avant</span>
+                            <span class="after-label">Après</span>
+                        </div>
+                    </div>
+                    <div class="realisation-info">
+                        <h3>Rénovation d'escalier</h3>
+                        <p>Restauration et modernisation d'un escalier pour lui donner une nouvelle vie tout en conservant son caractère.</p>
+                        <div class="tags">
+                            <span class="tag">Travaux intérieurs</span>
+                            <span class="tag">Menuiserie</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cage d'escalier - Travaux intérieurs -->
+                <div class="realisation-card" data-category="interieur peinture">
+                    <div class="before-after-container">
+                        <div class="before-after-images">
+                            <img src="assets/img/case_esc_avant.JPG" alt="Cage d'escalier avant rénovation" class="before-img">
+                            <img src="assets/img/cage_esc_apres.JPG" alt="Cage d'escalier après rénovation" class="after-img">
+                            <div class="comparison-slider-handle"></div>
+                        </div>
+                        <div class="image-labels">
+                            <span class="before-label">Avant</span>
+                            <span class="after-label">Après</span>
+                        </div>
+                    </div>
+                    <div class="realisation-info">
+                        <h3>Rénovation de cage d'escalier</h3>
+                        <p>Remise à neuf complète d'une cage d'escalier avec travaux de peinture et finitions soignées.</p>
+                        <div class="tags">
+                            <span class="tag">Travaux intérieurs</span>
+                            <span class="tag">Peinture</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Combles - Travaux intérieurs -->
+                <div class="realisation-card" data-category="interieur amenagement">
+                    <div class="before-after-container">
+                        <div class="before-after-images">
+                            <img src="assets/img/comble_avant.JPG" alt="Combles avant aménagement" class="before-img">
+                            <img src="assets/img/comble_apres.JPG" alt="Combles après aménagement" class="after-img">
+                            <div class="comparison-slider-handle"></div>
+                        </div>
+                        <div class="image-labels">
+                            <span class="before-label">Avant</span>
+                            <span class="after-label">Après</span>
+                        </div>
+                    </div>
+                    <div class="realisation-info">
+                        <h3>Aménagement de combles</h3>
+                        <p>Transformation d'un espace perdu en une pièce à vivre fonctionnelle et lumineuse.</p>
+                        <div class="tags">
+                            <span class="tag">Travaux intérieurs</span>
+                            <span class="tag">Aménagement</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Faux plafond - Travaux intérieurs -->
+                <div class="realisation-card" data-category="interieur">
+                    <div class="before-after-container">
+                        <div class="before-after-images">
+                            <img src="assets/img/faux_plafond.JPG" alt="Faux plafond installation" class="before-img">
+                            <img src="assets/img/faux_plafond2.JPG" alt="Faux plafond terminé" class="after-img">
+                            <div class="comparison-slider-handle"></div>
+                        </div>
+                        <div class="image-labels">
+                            <span class="before-label">Pendant</span>
+                            <span class="after-label">Après</span>
+                        </div>
+                    </div>
+                    <div class="realisation-info">
+                        <h3>Installation de faux plafond</h3>
+                        <p>Mise en place d'un faux plafond moderne avec éclairage intégré pour un rendu esthétique et fonctionnel.</p>
+                        <div class="tags">
+                            <span class="tag">Travaux intérieurs</span>
+                            <span class="tag">Plafond</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Parement - Travaux extérieurs -->
+                <div class="realisation-card" data-category="exterieur maconnerie">
+                    <div class="before-after-container">
+                        <div class="before-after-images">
+                            <img src="assets/img/parment_apres.JPG" alt="Mur avant parement" class="before-img">
+                            <img src="assets/img/parment_avant.JPG" alt="Mur après parement" class="after-img">
+                            <div class="comparison-slider-handle"></div>
+                        </div>
+                        <div class="image-labels">
+                            <span class="before-label">Avant</span>
+                            <span class="after-label">Après</span>
+                        </div>
+                    </div>
+                    <div class="realisation-info">
+                        <h3>Pose de parement extérieur</h3>
+                        <p>Habillage d'un mur extérieur avec un parement en pierre pour un rendu naturel et élégant.</p>
+                        <div class="tags">
+                            <span class="tag">Travaux extérieurs</span>
+                            <span class="tag">Maçonnerie</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Canalisation - Travaux extérieurs -->
+                <div class="realisation-card" data-category="exterieur maconnerie">
+                    <div class="before-after-container">
+                        <div class="before-after-images">
+                            <img src="assets/img/canalisation_apres.JPG" alt="Canalisation avant travaux" class="before-img">
+                            <img src="assets/img/canalisation_avant.JPG" alt="Canalisation après travaux" class="after-img">
+                            <div class="comparison-slider-handle"></div>
+                        </div>
+                        <div class="image-labels">
+                            <span class="before-label">Avant</span>
+                            <span class="after-label">Après</span>
+                        </div>
+                    </div>
+                    <div class="realisation-info">
+                        <h3>Réfection de canalisation</h3>
+                        <p>Travaux de réparation et d'amélioration du système de canalisation extérieure pour une meilleure évacuation des eaux.</p>
+                        <div class="tags">
+                            <span class="tag">Travaux extérieurs</span>
+                            <span class="tag">Maçonnerie</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aménagement extérieur -->
+                <div class="realisation-card" data-category="exterieur amenagement">
+                    <div class="before-after-container">
+                        <div class="before-after-images">
+                            <img src="assets/img/amenagement_ext_avant.png" alt="Espace extérieur avant aménagement" class="before-img" width="100%">
+                            <img src="assets/img/amenagement_ext_apres.JPG" alt="Espace extérieur après aménagement" class="after-img">
+                            <div class="comparison-slider-handle"></div>
+                        </div>
+                        <div class="image-labels">
+                            <span class="before-label">Avant</span>
+                            <span class="after-label">Après</span>
+                        </div>
+                    </div>
+                    <div class="realisation-info">
+                        <h3>Aménagement d'espace extérieur</h3>
+                        <p>Création d'un espace extérieur fonctionnel et esthétique pour profiter pleinement de votre jardin.</p>
+                        <div class="tags">
+                            <span class="tag">Travaux extérieurs</span>
+                            <span class="tag">Aménagement</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carrelage terrasse - Revêtement de sol -->
+                <div class="realisation-card" data-category="exterieur sol">
+                    <div class="before-after-container">
+                        <div class="before-after-images">
+                            <img src="assets/img/carrelage_terasse_avant.JPG" alt="Terrasse avant carrelage" class="before-img">
+                            <img src="assets/img/carelage_terasse_apres.JPG" alt="Terrasse après carrelage" class="after-img">
+                            <div class="comparison-slider-handle"></div>
+                        </div>
+                        <div class="image-labels">
+                            <span class="before-label">Avant</span>
+                            <span class="after-label">Après</span>
+                        </div>
+                    </div>
+                    <div class="realisation-info">
+                        <h3>Pose de carrelage sur terrasse</h3>
+                        <p>Rénovation complète d'une terrasse avec pose de carrelage extérieur résistant et esthétique.</p>
+                        <div class="tags">
+                            <span class="tag">Travaux extérieurs</span>
+                            <span class="tag">Revêtement de sol</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Vous avez un projet similaire ?</h2>
+            <p>Contactez-nous pour discuter de votre projet et obtenir un devis personnalisé.</p>
+            <a href="contact.html" class="btn btn-primary">Nous contacter</a>
+        </div>
+    </section>
+
+     <!-- Pied de page -->
+     <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/img/logo_defou.png" alt="">
+                    <p>Artisan du bâtiment en Île-de-France</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="realisations.html">Réalisations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Nos services</h3>
+                    <ul>
+                        <li>Maçonnerie</li>
+                        <li>Peinture</li>
+                        <li>Enduit</li>
+                        <li>Travaux intérieurs & extérieurs</li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Île-de-France</p>
+                    <p><i class="fas fa-phone"></i> +33 6 62 51 07 00</p>
+                    <p><i class="fas fa-envelope"></i> contact@dlgsbat.fr</p>
+                </div>
+            </div>
+            <div class="legal-accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Mentions légales <i class="fas fa-chevron-down"></i></h3>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="legal-section">
+                            <h4>Informations sur la société</h4>
+                            <p>DLGS_BAT</p>
+                            <p>Entreprise de BTP en Île-de-France</p>
+                            <p>Téléphone : +33 6 62 51 07 00</p>
+                            <p>Email : contact@dlgsbat.fr</p>
+                        </div>
+                        <div class="legal-section">
+                            <h4>Hébergement du site</h4>
+                            <p>Ce site est hébergé par O2switch</p>
+                            <p>222-224 Boulevard Gustave Flaubert</p>
+                            <p>63000 Clermont-Ferrand</p>
+                            <p>Site web : <a href="https://www.o2switch.fr" target="_blank">www.o2switch.fr</a></p>
+                        </div>
+                        <div class="legal-section">
+                            <h4>Propriété intellectuelle</h4>
+                            <p>L'ensemble des éléments constituant ce site (textes, graphiques, logiciels, photographies, images, vidéos, sons, etc.) est la propriété exclusive de DLGS_BAT. Toute reproduction, représentation ou diffusion, en tout ou partie, du contenu de ce site sur quelque support ou par tout procédé que ce soit est interdite.</p>
+                        </div>
+                        <div class="legal-section">
+                            <h4>Protection des données personnelles</h4>
+                            <p>Conformément à la loi Informatique et Libertés du 6 janvier 1978 modifiée, vous disposez d'un droit d'accès, de rectification et de suppression des données vous concernant. Pour exercer ce droit, veuillez nous contacter par email à l'adresse : contact@dlgsbat.fr</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DLGS_BAT. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
+
+
+                            <!-- ────────────────────────────────────────
+                            ─────────────▄▄██████████▄▄─────────────
+                            ─────────────▀▀▀───██───▀▀▀─────────────
+                            ─────▄██▄───▄▄████████████▄▄───▄██▄─────
+                            ───▄███▀──▄████▀▀▀────▀▀▀████▄──▀███▄───
+                            ──████▄─▄███▀──────────────▀███▄─▄████──
+                            ─███▀█████▀▄████▄──────▄████▄▀█████▀███─
+                            ─██▀──███▀─██████──────██████─▀███──▀██─
+                            ──▀──▄██▀──▀████▀──▄▄──▀████▀──▀██▄──▀──
+                            ─────███───────────▀▀───────────███─────
+                            ─────██████████████████████████████─────
+                            ─▄█──▀██──███───██────██───███──██▀──█▄─
+                            ─███──███─███───██────██───███▄███──███─
+                            ─▀██▄████████───██────██───████████▄██▀─
+                            ──▀███▀─▀████───██────██───████▀─▀███▀──
+                            ───▀███▄──▀███████────███████▀──▄███▀───
+                            ─────▀███────▀▀██████████▀▀▀───███▀─────
+                            ───────▀─────▄▄▄───██───▄▄▄──────▀──────
+                            ──────────── ▀▀███████████▀▀ ────────────
+                            ──────────────────────────────────────── -->
+
+
+
