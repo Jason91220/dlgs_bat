@@ -6,6 +6,7 @@
     <meta name="description" content="DLGS_BAT - Entreprise de BTP en Île-de-France spécialisée en maçonnerie, peinture, enduit, travaux intérieurs et extérieurs">
     <title>DLGS_BAT | Artisan du BTP en Île-de-France</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/hero-carousel.css">
     <!-- Font Awesome pour les icônes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Les scripts seront chargés à la fin du document -->
@@ -15,7 +16,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="assets/img/logo_defou.png" alt="" width="100" height="auto">
+                <img src="assets/img/logo_defou.png" alt="logo dlgsbat" width="100" height="auto">
             </div>
             <nav>
                 <ul class="nav-menu">
@@ -34,14 +35,7 @@
 
     <!-- Bannière principale -->
     <section class="hero">
-        <!-- 
-  If you wish to copy this function,
-  Copy this html and classes ending in -js to make it work.
-  The h1 is optional and so is the "headline" class.
-
-  pssssst. if you use it, let me know I'd love to see it. My twitter is in the   
-  bottom corner or below
--->
+        
 <div class="container">
     <div class="hero-content">
                <h2>Artisan du bâtiment en Île-de-France</h2>
@@ -51,27 +45,19 @@
         </div>
     </section>
 
-    <!-- Section Avant/Après -->
+    <!-- Section Avant/Après avec Carousel -->
     <section class="before-after">
-        <div class="container">
+        <div class="hero-carousel">
+            <div class="hero-slide active" style="background-image: url('assets/img/cuisine_apres.JPG');"></div>
+            <div class="hero-slide" style="background-image: url('assets/img/escalier_apres.JPG');"></div>
+            <div class="hero-slide" style="background-image: url('assets/img/comble_apres.JPG');"></div>
+            <div class="hero-slide" style="background-image: url('assets/img/carelage_terasse_apres.JPG');"></div>
+            <div class="hero-slide" style="background-image: url('assets/img/amenagement_ext_apres.JPG');"></div>
+        </div>
+        
+        <div class="container hero-content">
             <h2>Notre savoir-faire en images</h2>
-            <div class="comparison-slider">
-                <div class="before-image">
-                    <img src="assets/img/cuisine_avant.JPG" alt="Cuisine avant travaux">
-                    <span class="label">Avant</span>
-                </div>
-                <div class="after-image">
-                    <img src="assets/img/cuisine_apres.JPG" alt="Cuisine après travaux">
-                    <span class="label">Après</span>
-                </div>
-                <div class="slider-handle">
-                    <i class="fas fa-chevron-left"></i>
-                    <i class="fas fa-chevron-right"></i>
-                </div>
-            </div>
-            <div class="cta-center">
-                <a href="realisations.html" class="btn btn-secondary">Voir toutes nos réalisations</a>
-            </div>
+            <a href="realisations.html" class="btn btn-secondary">Voir toutes nos réalisations</a>
         </div>
     </section>
 
@@ -227,9 +213,8 @@
     </footer>
 
     <!-- Scripts JavaScript -->
-    <script src="assets/js/lib/anime.min.js"></script>
-    <script src="assets/js/fireworks.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/hero-carousel.js"></script>
 </body>
 </html>
 

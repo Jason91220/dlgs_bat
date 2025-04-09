@@ -249,9 +249,5 @@ function autoType(elementClass, typingSpeed){
     },1500);
   }
   
-  $(document).ready(function(){
-    // Now to start autoTyping just call the autoType function with the 
-    // class of outer div
-    // The second paramter is the speed between each letter is typed.   
-    autoType(".type-js",200);
-  });
+ 
+

@@ -1,0 +1,75 @@
+/* Hero Carousel Styles */
+.before-after {
+    position: relative;
+    padding: 0;
+    height: 65vh; /* Hauteur réduite */
+    overflow: hidden;
+}
+
+.hero-carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-slide.active {
+    opacity: 1;
+}
+
+.hero-slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    color: #fff;
+}
+
+
+
+.hero-content h2:after {
+    background-color: #fff;
+}
+
+/* Suppression des contrôles de navigation */
+
+@media (max-width: 768px) {
+    .before-after {
+        height: 55vh; /* Hauteur réduite pour mobile */
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+}
