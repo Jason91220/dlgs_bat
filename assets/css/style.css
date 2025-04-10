@@ -978,6 +978,13 @@ footer {
     max-height: 1000px;
 }
 
+.footer-logo p{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 992px) {
     h1 {
