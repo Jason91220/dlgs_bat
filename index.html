@@ -11,10 +11,16 @@
     <meta name="geo.placename" content="Bruyères-le-Châtel">
     <title>DGGS_BAT | Entreprise de BTP et Maçonnerie à Bruyères-le-Châtel</title>
     <link rel="shortcut icon" href="assets/img/logo_davy.webp" type="image/x-icon">
+    <!-- Preload critical hero images -->
+    <link rel="preload" href="assets/img/cuisine_apres.webp" as="image" fetchpriority="high">
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="assets/css/style.css" as="style">
+    <link rel="preload" href="assets/css/hero-carousel.css" as="style">
+    <!-- CSS files -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/hero-carousel.css">
     <!-- Font Awesome pour les icônes -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
     <!-- Les scripts seront chargés à la fin du document -->
 </head>
 <body>
@@ -56,11 +62,11 @@
     <!-- Section Avant/Après avec Carousel -->
     <section class="before-after">
         <div class="hero-carousel">
-            <div class="hero-slide active" style="background-image: url('assets/img/cuisine_apres.webp');"></div>
-            <div class="hero-slide" style="background-image: url('assets/img/escalier_apres.webp');"></div>
-            <div class="hero-slide" style="background-image: url('assets/img/comble_apres.webp');"></div>
-            <div class="hero-slide" style="background-image: url('assets/img/carelage_terasse_apres.webp');"></div>
-            <div class="hero-slide" style="background-image: url('assets/img/amenagement_ext_apres.webp');"></div>
+            <div class="hero-slide active" style="background-image: url('assets/img/cuisine_apres.webp');" loading="eager" fetchpriority="high"></div>
+            <div class="hero-slide" style="background-image: url('assets/img/escalier_apres.webp');" loading="lazy"></div>
+            <div class="hero-slide" style="background-image: url('assets/img/comble_apres.webp');" loading="lazy"></div>
+            <div class="hero-slide" style="background-image: url('assets/img/carelage_terasse_apres.webp');" loading="lazy"></div>
+            <div class="hero-slide" style="background-image: url('assets/img/amenagement_ext_apres.webp');" loading="lazy"></div>
         </div>
         
         <div class="container hero-content">
@@ -222,9 +228,9 @@
     </footer>
 
     <!-- Scripts JavaScript -->
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/hero-carousel.js"></script>
-    <script src="assets/js/nav-animation.js"></script>
+    <script src="assets/js/app.js" defer></script>
+    <script src="assets/js/hero-carousel.js" defer></script>
+    <script src="assets/js/nav-animation.js" defer></script>
 </body>
 </html>
 
