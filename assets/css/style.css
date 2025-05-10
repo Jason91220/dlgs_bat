@@ -138,6 +138,7 @@ header {
     top: 0;
     z-index: 1000;
     padding: 15px 0;
+    transition: transform 0.3s ease, background-color 0.3s ease, padding 0.3s ease;
 }
 
 header .container {
@@ -983,6 +984,21 @@ footer {
     justify-content: center;
     font-weight: bold;
     margin-top: 1rem;
+}
+
+/* ===== NAVIGATION ANIMATION ===== */
+header.scrolled {
+    background-color: rgba(34, 34, 34, 0.95);
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header.scroll-down {
+    transform: translateY(-100%);
+}
+
+header.scroll-up {
+    transform: translateY(0);
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
